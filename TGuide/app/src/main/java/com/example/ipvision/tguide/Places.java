@@ -1,19 +1,63 @@
 package com.example.ipvision.tguide;
 
+import java.io.Serializable;
+
 /**
  * Created by ipvision on 4/17/2017.
  */
 
-public class Places {
-    private String name, description, img;
+public class Places implements Serializable {
+    private String name;
+    private String description;
+
+
+
+    private String intro;
+    private String howToGo;
+    private String placesToVisit;
+    private String img;
+    private int image;
+    private String division;
 
     public Places() {
     }
 
-    public Places(String name, String description, String img) {
+    public Places(String name, String division,  int image) {
         this.name = name;
-        this.description = description;
-        this.img = img;
+        this.division = division;
+        this.image = image;
+    }
+
+    public String getIntro() {
+        return intro;
+    }
+
+    public void setIntro(String intro) {
+        this.intro = intro;
+    }
+
+    public String getHowToGo() {
+        return howToGo;
+    }
+
+    public void setHowToGo(String howToGo) {
+        this.howToGo = howToGo;
+    }
+
+    public String getPlacesToVisit() {
+        return placesToVisit;
+    }
+
+    public void setPlacesToVisit(String placesToVisit) {
+        this.placesToVisit = placesToVisit;
+    }
+
+    public String getDivision() {
+        return division;
+    }
+
+    public void setDivision(String division) {
+        this.division = division;
     }
 
     public String getName() {
@@ -32,8 +76,8 @@ public class Places {
         this.description = description;
     }
 
-    public String getImg() {
-        return img;
+    public int getImage() {
+        return image;
     }
 
     public void setImg(String img) {

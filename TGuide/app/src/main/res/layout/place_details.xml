@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/cover_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/ic_launcher" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:fillViewport="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name"
+        android:textColor="@color/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="পরিচিতি:"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_marginLeft="7dp"/>
+    <TextView
+        android:id="@+id/intro"
+        android:textColor="@color/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="17sp"
+        android:layout_marginLeft="7dp"/>
+
+    <TextView
+        android:id="@+id/way"
+        android:textColor="@color/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="কিভাবে যাবেন:"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_marginLeft="7dp"/>
+    <TextView
+        android:id="@+id/how_to_go"
+        android:textColor="@color/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="17sp"
+        android:layout_marginLeft="7dp"/>
+
+    <TextView
+        android:id="@+id/place"
+        android:textColor="@color/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="দর্শনীয় স্থান সমূহ:"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_marginLeft="7dp"/>
+
+    <TextView
+        android:id="@+id/places_to_visit"
+        android:textColor="@color/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="17sp"
+        android:layout_marginLeft="7dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
