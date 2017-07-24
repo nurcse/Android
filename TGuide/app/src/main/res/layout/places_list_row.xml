@@ -6,10 +6,10 @@
     android:clickable="true"
     android:focusable="true"
     android:orientation="vertical"
-    android:paddingBottom="4dp"
-    android:paddingLeft="7dp"
-    android:paddingRight="7dp"
-    android:paddingTop="4dp"
+    android:paddingBottom="2dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="2dp"
     android:id="@+id/row_layout">
 
     <!--android:background="@drawable/sajek"
