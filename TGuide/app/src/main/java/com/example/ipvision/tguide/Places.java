@@ -16,16 +16,27 @@ public class Places implements Serializable {
     private String howToGo;
     private String placesToVisit;
     private String img;
-    private int image;
+    private int image, index;
     private String division;
 
     public Places() {
     }
 
-    public Places(String name, String division,  int image) {
+
+
+    public Places(String name, String division, int image, int index) {
         this.name = name;
         this.division = division;
         this.image = image;
+        this.index = index;
+    }
+
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
     }
 
     public String getIntro() {

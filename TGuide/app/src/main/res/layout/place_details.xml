@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ext="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -25,80 +26,99 @@
                 android:layout_alignParentLeft="true"
                 android:src="@mipmap/ic_launcher" />
 
+            <TextView
+                android:id="@+id/name"
+                android:textColor="@color/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="পরিচিতি:"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"/>
+
             <com.bluejamesbond.text.DocumentView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="8dp"
                 android:layout_marginLeft="8dp"
+                ext:documentView_textSize="16dp"
                 documentView_textAlignment="justified"
-                android:id="@+id/document"/>
+                android:id="@+id/intro"/>
+
+            <TextView
+                android:id="@+id/way"
+                android:textColor="@color/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="কিভাবে যাবেন:"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"/>
+
+
             <com.bluejamesbond.text.DocumentView
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="8dp"
                 android:layout_marginLeft="8dp"
+                ext:documentView_textSize="13dp"
                 documentView_textAlignment="justified"
-                android:id="@+id/document2"/>
+                android:id="@+id/how_to_go"/>
 
-    <TextView
-        android:id="@+id/name"
-        android:textColor="@color/name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="পরিচিতি:"
-        android:textStyle="bold"
-        android:textSize="17sp"
-        android:layout_marginLeft="7dp"/>
-    <TextView
-        android:id="@+id/intro"
-        android:textColor="@color/name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="17sp"
-        android:scaleType="fitXY"
-        android:gravity="fill"
-        android:textAlignment="gravity"
-        android:layout_marginLeft="7dp"/>
+            <TextView
+                android:id="@+id/place"
+                android:textColor="@color/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="দর্শনীয় স্থান সমূহ:"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"/>
 
-    <TextView
-        android:id="@+id/way"
-        android:textColor="@color/name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="কিভাবে যাবেন:"
-        android:textStyle="bold"
-        android:textSize="17sp"
-        android:layout_marginLeft="7dp"/>
-    <TextView
-        android:id="@+id/how_to_go"
-        android:textColor="@color/name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="17sp"
-        android:scaleType="fitXY"
-        android:layout_marginLeft="7dp"/>
+            <com.bluejamesbond.text.DocumentView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                ext:documentView_textSize="13dp"
+                documentView_textAlignment="justified"
+                android:id="@+id/places_to_visit"/>
 
-    <TextView
-        android:id="@+id/place"
-        android:textColor="@color/name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="দর্শনীয় স্থান সমূহ:"
-        android:textStyle="bold"
-        android:textSize="17sp"
-        android:layout_marginLeft="7dp"/>
 
-    <TextView
-        android:id="@+id/places_to_visit"
-        android:textColor="@color/name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="17sp"
-        android:scaleType="fitXY"
-        android:layout_marginLeft="7dp"/>
+    <!--<TextView-->
+        <!--android:id="@+id/intro"-->
+        <!--android:textColor="@color/name"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text=""-->
+        <!--android:textSize="17sp"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:gravity="fill"-->
+        <!--android:textAlignment="gravity"-->
+        <!--android:layout_marginLeft="7dp"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/how_to_go"-->
+        <!--android:textColor="@color/name"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text=""-->
+        <!--android:textSize="17sp"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:layout_marginLeft="7dp"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/places_to_visit"-->
+        <!--android:textColor="@color/name"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text=""-->
+        <!--android:textSize="17sp"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:layout_marginLeft="7dp"/>-->
 
         </LinearLayout>
     </ScrollView>
