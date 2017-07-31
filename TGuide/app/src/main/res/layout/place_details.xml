@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="8dp"
                 android:layout_marginLeft="8dp"
-                ext:documentView_textSize="13dp"
+                ext:documentView_textSize="16dp"
                 documentView_textAlignment="justified"
                 android:id="@+id/how_to_go"/>
 
@@ -83,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="8dp"
                 android:layout_marginLeft="8dp"
-                ext:documentView_textSize="13dp"
+                ext:documentView_textSize="16dp"
                 documentView_textAlignment="justified"
                 android:id="@+id/places_to_visit"/>
 
